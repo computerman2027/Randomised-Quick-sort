@@ -10,8 +10,8 @@ void random(int arr[], int low, int high)
 {
     int random = low + rand() % (high - low);
     int temp = arr[random];
-    arr[random] = arr[low];
-    arr[low] = temp;
+    arr[random] = arr[high];
+    arr[high] = temp;
 }
 int partition(int arr[], int first, int last)
 {
